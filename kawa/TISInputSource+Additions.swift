@@ -1,4 +1,5 @@
 import Foundation
+import Carbon
 
 extension TISInputSource {
   enum Category {
@@ -41,6 +42,8 @@ extension TISInputSource {
   }
 
   var iconRef: IconRef? {
-    return OpaquePointer(TISGetInputSourceProperty(self, kTISPropertyIconRef)) as IconRef?
+    guard let property = TISGetInputSourceProperty(self, kTISPropertyIconRef) else { return nil }
+    return OpaquePointer(property) as IconRef?
   }
+
 }

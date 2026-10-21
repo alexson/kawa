@@ -1,386 +1,171 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 53;
+	classes = {};
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC1FEF6F1B685FD3005E9BC8 /* ShortcutCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1FEF6E1B685FD3005E9BC8 /* ShortcutCellView.swift */; };
-		CC4065BE1B6D334B000E1E87 /* PermanentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4065BD1B6D334B000E1E87 /* PermanentStorage.swift */; };
-		CC4181681B6CB3CB007DA794 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4181671B6CB3CB007DA794 /* PreferencesViewController.swift */; };
-		CC69E0761B663E1E00A92F58 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69E0751B663E1E00A92F58 /* MainWindowController.swift */; };
-		CC69E0781B66415300A92F58 /* ShortcutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69E0771B66415300A92F58 /* ShortcutViewController.swift */; };
-		CC69E07A1B6646B200A92F58 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69E0791B6646B200A92F58 /* StatusBar.swift */; };
-		CC6D8ECE1B654099005682C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8ECD1B654099005682C0 /* AppDelegate.swift */; };
-		CC6D8ED21B654099005682C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6D8ED11B654099005682C0 /* Images.xcassets */; };
-		CC6D8ED51B654099005682C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6D8ED31B654099005682C0 /* Main.storyboard */; };
-		CC6D8EEB1B654143005682C0 /* InputSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8EEA1B654143005682C0 /* InputSourceManager.swift */; };
-		CC9AAD2B1B71AA5400626F65 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */; };
-		CC9AAD2C1B71AA5400626F65 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EE92E8FD1F6CC98E00559B7C /* TISInputSource+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92E8FC1F6CC98E00559B7C /* TISInputSource+Additions.swift */; };
+		A10000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* AppDelegate.swift */; };
+		A10000000000000000000002 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* StatusBar.swift */; };
+		A10000000000000000000003 /* InputSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* InputSourceManager.swift */; };
+		A10000000000000000000004 /* PermanentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* PermanentStorage.swift */; };
+		A10000000000000000000005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* SettingsView.swift */; };
+		A10000000000000000000006 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* NotificationService.swift */; };
+		A10000000000000000000007 /* TISInputSource+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* TISInputSource+Additions.swift */; };
+		A10000000000000000000008 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* Images.xcassets */; };
+		A10000000000000000000009 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = E10000000000000000000001 /* KeyboardShortcuts */; };
+		A10000000000000000000010 /* KawaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* KawaApp.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		CC9AAD2D1B71AA5400626F65 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CC9AAD2C1B71AA5400626F65 /* MASShortcut.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		CC1FEF6D1B685E9A005E9BC8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		CC1FEF6E1B685FD3005E9BC8 /* ShortcutCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutCellView.swift; sourceTree = "<group>"; };
-		CC4065BD1B6D334B000E1E87 /* PermanentStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermanentStorage.swift; sourceTree = "<group>"; };
-		CC4181671B6CB3CB007DA794 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		CC69E0751B663E1E00A92F58 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		CC69E0771B66415300A92F58 /* ShortcutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutViewController.swift; sourceTree = "<group>"; };
-		CC69E0791B6646B200A92F58 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
-		CC6D8EC81B654099005682C0 /* Kawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC6D8ECC1B654099005682C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC6D8ECD1B654099005682C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC6D8ED11B654099005682C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CC6D8EEA1B654143005682C0 /* InputSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSourceManager.swift; sourceTree = "<group>"; };
-		CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = "<group>"; };
-		DE8850D624B633EC002964E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE92E8FC1F6CC98E00559B7C /* TISInputSource+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TISInputSource+Additions.swift"; sourceTree = "<group>"; };
+		B10000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* InputSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSourceManager.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* PermanentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanentStorage.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* TISInputSource+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TISInputSource+Additions.swift"; sourceTree = "<group>"; };
+		B10000000000000000000008 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B10000000000000000000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10000000000000000000010 /* Kawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000011 /* KawaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KawaApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC6D8EC51B654099005682C0 /* Frameworks */ = {
+		C10000000000000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
-			files = (
-				CC9AAD2B1B71AA5400626F65 /* MASShortcut.framework in Frameworks */,
-			);
+			files = (A10000000000000000000009 /* KeyboardShortcuts in Frameworks */,);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC6D8EBF1B654099005682C0 = {
+		D10000000000000000000001 = {
 			isa = PBXGroup;
-			children = (
-				CC6D8ECA1B654099005682C0 /* kawa */,
-				CC6D8EC91B654099005682C0 /* Products */,
-				CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */,
-			);
+			children = (D10000000000000000000002 /* kawa */, D10000000000000000000003 /* Products */,);
 			sourceTree = "<group>";
 		};
-		CC6D8EC91B654099005682C0 /* Products */ = {
+		D10000000000000000000002 /* kawa */ = {
 			isa = PBXGroup;
 			children = (
-				CC6D8EC81B654099005682C0 /* Kawa.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CC6D8ECA1B654099005682C0 /* kawa */ = {
-			isa = PBXGroup;
-			children = (
-				CC6D8ECD1B654099005682C0 /* AppDelegate.swift */,
-				CC69E0791B6646B200A92F58 /* StatusBar.swift */,
-				CC4065BD1B6D334B000E1E87 /* PermanentStorage.swift */,
-				CC69E0751B663E1E00A92F58 /* MainWindowController.swift */,
-				CC69E0771B66415300A92F58 /* ShortcutViewController.swift */,
-				CC1FEF6E1B685FD3005E9BC8 /* ShortcutCellView.swift */,
-				CC6D8EEA1B654143005682C0 /* InputSourceManager.swift */,
-				CC4181671B6CB3CB007DA794 /* PreferencesViewController.swift */,
-				CC6D8ED11B654099005682C0 /* Images.xcassets */,
-				CC6D8ED31B654099005682C0 /* Main.storyboard */,
-				CC6D8ECB1B654099005682C0 /* Supporting Files */,
+				B10000000000000000000001 /* AppDelegate.swift */,
+				B10000000000000000000011 /* KawaApp.swift */,
+				B10000000000000000000002 /* StatusBar.swift */,
+				B10000000000000000000003 /* InputSourceManager.swift */,
+				B10000000000000000000004 /* PermanentStorage.swift */,
+				B10000000000000000000005 /* SettingsView.swift */,
+				B10000000000000000000006 /* NotificationService.swift */,
+				B10000000000000000000007 /* TISInputSource+Additions.swift */,
+				B10000000000000000000008 /* Images.xcassets */,
+				B10000000000000000000009 /* Info.plist */,
 			);
 			path = kawa;
 			sourceTree = "<group>";
 		};
-		CC6D8ECB1B654099005682C0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CC1FEF6D1B685E9A005E9BC8 /* BridgingHeader.h */,
-				EE92E8FC1F6CC98E00559B7C /* TISInputSource+Additions.swift */,
-				CC6D8ECC1B654099005682C0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
+		D10000000000000000000003 /* Products */ = {isa = PBXGroup; children = (B10000000000000000000010 /* Kawa.app */,); name = Products; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC6D8EC71B654099005682C0 /* kawa */ = {
+		F10000000000000000000001 /* kawa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC6D8EE41B654099005682C0 /* Build configuration list for PBXNativeTarget "kawa" */;
-			buildPhases = (
-				CC6D8EC41B654099005682C0 /* Sources */,
-				CC6D8EC51B654099005682C0 /* Frameworks */,
-				CC6D8EC61B654099005682C0 /* Resources */,
-				CC9AAD2D1B71AA5400626F65 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
+			buildConfigurationList = F10000000000000000000003 /* Build configuration list for PBXNativeTarget "kawa" */;
+			buildPhases = (F30000000000000000000001 /* Sources */, C10000000000000000000001 /* Frameworks */, F30000000000000000000002 /* Resources */,);
+			buildRules = ();
+			dependencies = ();
 			name = kawa;
+			packageProductDependencies = (E10000000000000000000001 /* KeyboardShortcuts */,);
 			productName = kawa;
-			productReference = CC6D8EC81B654099005682C0 /* Kawa.app */;
+			productReference = B10000000000000000000010 /* Kawa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC6D8EC01B654099005682C0 /* Project object */ = {
+		F40000000000000000000001 /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = noraesae;
-				TargetAttributes = {
-					CC6D8EC71B654099005682C0 = {
-						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 1150;
-					};
-				};
-			};
-			buildConfigurationList = CC6D8EC31B654099005682C0 /* Build configuration list for PBXProject "kawa" */;
-			compatibilityVersion = "Xcode 11.4";
+			attributes = { LastUpgradeCheck = 2700; ORGANIZATIONNAME = alexson; TargetAttributes = { F10000000000000000000001 = { CreatedOnToolsVersion = 27.0; }; }; };
+			buildConfigurationList = F50000000000000000000001 /* Project configuration list for PBXProject "kawa" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = CC6D8EBF1B654099005682C0;
-			productRefGroup = CC6D8EC91B654099005682C0 /* Products */;
+			knownRegions = (en, Base,);
+			mainGroup = D10000000000000000000001;
+			packageReferences = (E10000000000000000000002 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,);
+			productRefGroup = D10000000000000000000003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-			targets = (
-				CC6D8EC71B654099005682C0 /* kawa */,
-			);
+			targets = (F10000000000000000000001 /* kawa */,);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CC6D8EC61B654099005682C0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC6D8ED21B654099005682C0 /* Images.xcassets in Resources */,
-				CC6D8ED51B654099005682C0 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+		F30000000000000000000002 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000008 /* Images.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC6D8EC41B654099005682C0 /* Sources */ = {
+		F30000000000000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1FEF6F1B685FD3005E9BC8 /* ShortcutCellView.swift in Sources */,
-				CC4181681B6CB3CB007DA794 /* PreferencesViewController.swift in Sources */,
-				CC69E07A1B6646B200A92F58 /* StatusBar.swift in Sources */,
-				CC69E0761B663E1E00A92F58 /* MainWindowController.swift in Sources */,
-				CC6D8ECE1B654099005682C0 /* AppDelegate.swift in Sources */,
-				CC4065BE1B6D334B000E1E87 /* PermanentStorage.swift in Sources */,
-				CC6D8EEB1B654143005682C0 /* InputSourceManager.swift in Sources */,
-				EE92E8FD1F6CC98E00559B7C /* TISInputSource+Additions.swift in Sources */,
-				CC69E0781B66415300A92F58 /* ShortcutViewController.swift in Sources */,
+				A10000000000000000000001 /* AppDelegate.swift in Sources */,
+				A10000000000000000000010 /* KawaApp.swift in Sources */,
+				A10000000000000000000002 /* StatusBar.swift in Sources */,
+				A10000000000000000000003 /* InputSourceManager.swift in Sources */,
+				A10000000000000000000004 /* PermanentStorage.swift in Sources */,
+				A10000000000000000000005 /* SettingsView.swift in Sources */,
+				A10000000000000000000006 /* NotificationService.swift in Sources */,
+				A10000000000000000000007 /* TISInputSource+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		CC6D8ED31B654099005682C0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE8850D624B633EC002964E4 /* en */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		CC6D8EE21B654099005682C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		CC6D8EE31B654099005682C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		CC6D8EE51B654099005682C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+		F20000000000000000000001 /* Debug project */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 26.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Debug; };
+		F20000000000000000000002 /* Release project */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 26.0; SDKROOT = macosx; SWIFT_VERSION = 6.0; }; name = Release; };
+		F20000000000000000000003 /* Debug target */ = {isa = XCBuildConfiguration; buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = kawa/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.noraesae.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Kawa;
-				SWIFT_OBJC_BRIDGING_HEADER = kawa/BridgingHeader.h;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		CC6D8EE61B654099005682C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 6.0;
+				ARCHS = arm64;
+				}; name = Debug; };
+		F20000000000000000000004 /* Release target */ = {isa = XCBuildConfiguration; buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = kawa/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.noraesae.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Kawa;
-				SWIFT_OBJC_BRIDGING_HEADER = kawa/BridgingHeader.h;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 6.0;
+				ARCHS = arm64;
+			}; name = Release; };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC6D8EC31B654099005682C0 /* Build configuration list for PBXProject "kawa" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC6D8EE21B654099005682C0 /* Debug */,
-				CC6D8EE31B654099005682C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC6D8EE41B654099005682C0 /* Build configuration list for PBXNativeTarget "kawa" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC6D8EE51B654099005682C0 /* Debug */,
-				CC6D8EE61B654099005682C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+		F10000000000000000000003 /* Build configuration list for PBXNativeTarget "kawa" */ = {isa = XCConfigurationList; buildConfigurations = (F20000000000000000000003 /* Debug target */, F20000000000000000000004 /* Release target */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F50000000000000000000001 /* Project configuration list for PBXProject "kawa" */ = {isa = XCConfigurationList; buildConfigurations = (F20000000000000000000001 /* Debug project */, F20000000000000000000002 /* Release project */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E10000000000000000000002 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts"; requirement = {kind = upToNextMajorVersion; minimumVersion = 3.1.0; }; };
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E10000000000000000000001 /* KeyboardShortcuts */ = {isa = XCSwiftPackageProductDependency; package = E10000000000000000000002 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */; productName = KeyboardShortcuts; };
+/* End XCSwiftPackageProductDependency section */
+
 	};
-	rootObject = CC6D8EC01B654099005682C0 /* Project object */;
+	rootObject = F40000000000000000000001 /* Project object */;
 }
