@@ -29,7 +29,7 @@ The goal is to provide Kawa's existing input source switching features in a macO
 
 ```sh
 brew tap alexson/kawa
-brew install --cask kawa
+brew install --cask alexson/kawa/kawa
 ```
 
 ## Build
