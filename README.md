@@ -25,6 +25,13 @@ The goal is to provide Kawa's existing input source switching features in a macO
 - Apple silicon
 - Xcode 27 or later
 
+## Install with Homebrew
+
+```sh
+brew tap alexson/kawa
+brew install --cask kawa
+```
+
 ## Build
 
 Open `kawa.xcodeproj` in Xcode and build the `kawa` scheme. Swift Package Manager resolves the keyboard shortcut dependency automatically.
