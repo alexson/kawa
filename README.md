@@ -4,7 +4,7 @@ Kawa is a macOS menu bar app for switching input sources with user-defined globa
 
 ## Project source
 
-This project is based on [alexson/kawa](https://github.com/alexson/kawa), an open-source macOS input source switcher. This repository is a work in progress to rebuild the app for modern Apple silicon Macs while preserving its core input switching and shortcut behavior.
+Kawa is based on the original open-source project by [@hatashiro](https://github.com/hatashiro/kawa), a macOS input source switcher with user-defined shortcuts. This repository is a work in progress to rebuild the app for modern Apple silicon Macs while preserving its core input switching and shortcut behavior. Thank you to @hatashiro and the original Kawa contributors for their work.
 
 ## Purpose
 
